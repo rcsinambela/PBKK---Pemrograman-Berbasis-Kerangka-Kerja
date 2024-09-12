@@ -9,18 +9,20 @@
     <title>Blog | Create Posst</title>
 </head>
 <body>
-    <h1>Create a new post</h1>
-    <form action="{{ url("posts") }}" method="POST" class="form-control">
-        @csrf
-        <div class="mb-3">
-            <label for="title" class="form-label">Title</label>
-            <input type="txt" class="form-control" id="title" name="title" placeholder="input a new blog">
-        </div>
-        <div class="mb-3">
-            <label for="content" class="form-label">Description</label>
-            <textarea class="form-control" id="content" name="content" rows="3"></textarea>
-        </div>
-        <button class="btn btn-primary" type="submit">Save</button>
-    </form>
+    <div class="container">
+        <h1>Create a new post</h1>
+        <form action="{{ url("posts") }}" method="POST" class="form-control">
+            @csrf
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="txt" class="form-control" id="title" name="title" placeholder="input a new blog" required>
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label">Description</label>
+                <textarea class="form-control" id="content" name="content" rows="3" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Save</button>
+        </form>
+    </div>
 </body>
 </html>
