@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Blog Kelompok 8
+        <h1>Blog Group 8
             <a href="{{ url("posts/create") }}" class="btn btn-success"> + Create a post</a>
         </h1>
 
